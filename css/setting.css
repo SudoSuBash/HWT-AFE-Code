@@ -1,0 +1,152 @@
+.HMAboutMainFrame {
+    width: calc(100% - 320px);
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+#HMAboutHeadSign {
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+#HMAMainIcon {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+#HMAWholeSign {
+    color: white;
+    margin-left: 25px;
+}
+
+#HWTAName {
+    font-size: 50px;
+    line-height: 45px;
+}
+
+#HWTAStudio {
+    font-size: 16px;
+}
+
+#HWTAVersion {
+    font-size: 14px;
+}
+
+#HWTAAttention {
+    font-size: 12px;
+}
+
+.HMA-Builders {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.HMA-Builders-Title {
+    border-radius: 5px;
+
+    background-color: rgba(128, 128, 128, 0.495);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.HMA-Builders-Info-Panel {
+    display: flex;
+    padding: 5px;
+    background-color: rgba(135, 207, 235, 0.495);
+    border-radius: 5px;
+}
+
+.HMA-Single-Builder {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    align-items: center;
+
+    margin-right: 5px;
+}
+
+.HMA-Build-Image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.HMA-Builder-Element {
+    margin-bottom: 3px;
+    
+}
+
+.HMA-Builder-Name {
+    font-size: 12px;
+
+}
+
+.HMA-Builder-Job-Element {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 9px;
+    -webkit-transform-origin-y: 0;
+    height: 11px;
+    margin-right: 3px;
+}
+
+.HMA-Builder-Job {
+    visibility: hidden;
+    padding: 5px;
+    position: absolute;
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition:all 100ms;
+}
+
+.HMA-Builder-Job-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+.HMA-Builder-Job-Link-Text {
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.HMA-Builder-Job-Link {
+    text-align: center;
+}
+
+.HMA-Builder-Job-Element-Text {
+    scale: 0.9;
+}
+
+.HMA-Builder-Job-Title {
+    text-align: left;
+    padding: 3px 0;
+    font-weight: bolder;
+}
+
+.HMA-Builder-Job-Link:hover > .HMA-Builder-Job {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.HMA-Builder-Bilibili {
+
+}

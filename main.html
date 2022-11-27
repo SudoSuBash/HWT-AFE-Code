@@ -1,0 +1,388 @@
+<!--
+    2022.10.29 NAT(New Aqua Theme)
+    基于Fake macOS主题
+-->
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Opencore Configurator</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/nav.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/QuickStart.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/UMView.css"/>
+        <script src="https://cdn.staticfile.org/jquery/√1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div id="SelectNav">
+                <ul id="MenuBarF">
+                    <li class="MenuBarFElement" id="MenuBarFStart">
+                        <div class="MenuBarFText">
+                            <img class="MenuBarStartIcon" src="./misc/Navs/Start.png"></img>
+                            <label>
+                                <span class="MenuBarFTextContent">Start</span>
+                            </label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    关于HWT...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    偏好设置...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable MenuBarHasT3Element">
+                                <div class="MenuBarElementText"><label>
+                                    应用程序...
+                                </label>
+                                <span class="MenuBarTSelectSign">></span>
+                                </div>
+                                <ul class="MenuBarT3P">
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/OCC.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Opencore Configurer</span>
+                                        </label>
+                                    </li>
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/CCL.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Clover Configurer</span>
+                                        </label>
+                                    </li>
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/QKC.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Quickly Configurer(快速配置)</span>
+                                        </label>
+                                    </li>
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/OCU.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">引导升级工具</span>
+                                        </label>
+                                    </li>
+                                    <hr>
+                                    <li class="MenuBarElement UnSelectable">
+                                        <div class="MenuBarElementText"><label>
+                                            某些功能需要一定条件才可以用
+                                        </label></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    上报Bug...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    退出HWT...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    返回主界面...
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="MenuBarFElement MenuBarFTitle">
+                        <div class="MenuBarFText">
+                            <label>Hackintosh Web ToolBox</label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    关于 Hackintosh Web ToolBox......
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    HWT偏好设置...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    Sudo-su-Bash的博客...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    Sudo-su-Bash的Github...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    Sudo-su-Bash的Gitee...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    关闭HWT(转到空白页)......
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="MenuBarFElement">
+                        <div class="MenuBarFText">
+                            <label>文件</label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement UnSelectable">
+                                <div class="MenuBarElementText"><label>
+                                    HWT只接受小于100M的EFI压缩包
+                                </label></div>
+                            </li> 
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    打开本地的EFI...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    向HWT上传EFI...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    获取账户中已经存着的EFI...
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavEndContainer">
+                <ul class="NavEnd">
+                    <li class="NavEndShow">
+                            <div class="NavEndLiElement NavUserIconContainer">
+                                <img class="NavUserIcon" src="./misc/DragonStudio.png">
+                            </div>
+                            
+                            <ul class="UserSecondMenu">
+                                <li class="UserSecondElement UserInfoElement">
+                                    <div class="UserLargeImgContainer">
+                                        <img class="UserLargeImg" src="./misc/DragonStudio.png">
+                                    </div>
+                                    <div class="UserName">
+                                        <span>腾龙Dragon工作室</span>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserStateElement">
+                                    <div class="UserScore">
+                                        <img class="UserScoreIconShow" src="./misc/UMIcons/ScoreIcon.png">
+                                        <div class="UserScoreCount">100</div>
+                                    </div>
+                                    <div class="UserLevel"></div>
+                                </li>
+                                <li class="UserSecondElement UserLevelShowElement">
+                                    
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Info.png">
+                                    <div class="UserElementInst">
+                                        <label>用户信息</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Score.png">
+                                    <div class="UserElementInst">
+                                        <label>积分管理</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Ban.png">
+                                    <div class="UserElementInst">
+                                        <label>封禁记录</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Feedback.png">
+                                    <div class="UserElementInst">
+                                        <label>给予反馈</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Settings.png">
+                                    <div class="UserElementInst">
+                                        <label>设置</label>
+                                    </div>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="NavEndShow">
+                        <div class="NavEndLiElement NavEndSearch">
+                            <input class="NavEndSearchBox" type="search" placeholder="伪Spotlight..."/>
+                            <div class="NavSearchIcon">
+                                <label>🔍</label>
+                            </div>
+                    </div>
+                    </li class="NavEndShow">
+                    <li>
+                        <div class="NavEndLiElement PersonShowContainer">
+                            <div class="PersonShowPanel">
+                                <div class="PersonShow">
+                                    <div class="NavCircle Green"></div>
+                                    <span>
+                                        在线人数 30
+                                    </span>
+                                </div>
+                                <div class="PersonShow">
+                                    <div class="NavCircle Blue"></div>
+                                    <span>
+                                        总共来访 3.5w
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="WindowArea">
+            <div class="WindowHead">
+                <div class="WindowHeadMain">
+                    <div class="WindowIcon">
+                        <label><img src="./misc/Starter/StartIcon.png"></label>
+                    </div>
+                    <div class="WindowTitle">
+                        新手教程
+                    </div>
+                </div>
+            </div>
+
+            <div class="WindowBody WQuickStart">
+                <div class="QuickStartNav">
+                    <div class="QSTNavLeft">
+                        <div class="QSTElement QSTNavTitle">
+                            <label><img class="QSTNavStarterIcon" src="./misc/Starter/StartIcon.png"/>
+                            </label>
+                            <div>
+                                <span style="color:red;">新</span><span style="color:yellow">手</span><span style="color:green">教</span><span style="color:blue">程</span><span style="color:purple">目</span><span style="color:orange">录</span></div>
+                        </div>
+                        <div class="QSTElement QSTSelectLists">
+                            <div class="QSTNavSelectTitle">欢迎来到 HWT!<br>这是新手教程,尽情探索一下吧!</div>
+                            <ul>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">
+                                        <label>从</label>
+                                        <label><span 
+                                            style="font-weight: bolder;
+                                            font-style:oblique;
+                                            margin:0 5px;
+                                            color: royalblue;">Start</span></label>
+                                        <label>键开始!</label>
+                                    </div>       
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        快速入门HWT的配置器!
+                                    </label>
+                                    <span class="QSTSelectSlide">⬇️</span>
+                                    </div>
+                                    <ul class="QSTSelectSecondMenu">
+                                        <li>
+                                            <div class="QSTSelectSecondEleText">
+                                                <label>GUI界面</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="QSTSelectSecondEleText">
+                                                <label>功能入口点</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="QSTSelectSecondEleText">
+                                                <label>应用程序</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">                                    
+                                        <label>
+                                            不想配置?点我就行!
+                                        </label>
+                                        <span class="QSTSelectSlide">⬇️</span>
+                                    </div>
+
+                                    <ul class="QSTSelectSecondMenu">
+                                        <li>
+                                            <div class="QSTSelectSecondEleText">
+                                                <label>快速配置简介</label>
+                                            </div></li>
+                                        <li>
+                                            <div class="QSTSelectSecondEleText">
+                                                <label>快速配置用法</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        庞大的资源仓库
+                                    </label>
+                                    <span class="QSTSelectSlide">⬇️</span>
+                                    </div>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        账户使用帮助...
+                                    </label>
+                                    <div class="QSTSelectSlide">⬇️</div>
+                                    </div>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        亿些疑难杂症...
+                                    </label>
+                                    <div class="QSTSelectSlide">⬇️</div>
+                                    </div>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        开发组的博客...
+                                    </label>
+                                    </div>
+                                </li>
+                                <li class="QSTSelectElement">
+                                    <div class="QSTSelectElementIntro">  
+                                    <label>
+                                        关于HWT及其开发组...
+                                    </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(()=>{
+            $(".NavSearchIcon").click(()=>{
+                
+                document.getElementsByClassName("NavEndSearchBox")[0].focus();
+            })
+        })
+    </script>
+</html>

@@ -1,0 +1,431 @@
+<!--
+    2022.10.29 NAT(New Aqua Theme)
+    基于Fake macOS主题
+-->
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Opencore Configurator</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/nav.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/NAQWindowStyle1.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/mail.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/UMView.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div id="SelectNav">
+                <ul id="MenuBarF">
+                    <li class="MenuBarFElement" id="MenuBarFStart">
+                        <div class="MenuBarFText">
+                            <img class="MenuBarStartIcon" src="./misc/Navs/Start.png"></img>
+                            <label>
+                                <span class="MenuBarFTextContent">Start</span>
+                            </label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    关于HWT...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    偏好设置...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable MenuBarHasT3Element">
+                                <div class="MenuBarElementText"><label>
+                                    应用程序...
+                                </label>
+                                <span class="MenuBarTSelectSign">></span>
+                                </div>
+                                <ul class="MenuBarT3P">
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/OCC.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Opencore Configurer</span>
+                                        </label>
+                                    </li>
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/CCL.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Clover Configurer</span>
+                                        </label>
+                                    </li>
+                                    <li class="MenuBarElement Selectable MenuBarApplications">
+                                        <img class="MenuBarApplicationIcon" src="./misc/FunctionIcons/QKC.png">
+                                        <label>
+                                            <span class="MenuBarApplicationText">Quickly Config(快速配置)</span>
+                                        </label>
+                                    </li>
+                                    <hr>
+                                    <li class="MenuBarElement UnSelectable">
+                                        <div class="MenuBarElementText"><label>
+                                            某些功能需要一定条件才可以用
+                                        </label></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    上报Bug...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    退出HWT...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    返回主界面...
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="MenuBarFElement MenuBarFTitle">
+                        <div class="MenuBarFText">
+                            <label>邮件</label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    关于邮件...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    邮件的帮助...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    偏好设置...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    上报邮件Bug...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    退回主界面...
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="MenuBarFElement">
+                        <div class="MenuBarFText">
+                            <label>操作</label>
+                        </div>
+                        <ul class="MenuBarS">
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    标为已读...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    标为未读...
+                                </label></div>
+                            </li>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    删除邮件...
+                                </label></div>
+                            </li>
+                            <hr>
+                            <li class="MenuBarElement Selectable">
+                                <div class="MenuBarElementText"><label>
+                                    接受奖励...
+                                </label></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavEndContainer">
+                <ul class="NavEnd">
+                    <li class="NavEndShow NavUserInfo">
+                            <div class="NavEndLiElement NavUserIconContainer">
+                                <img class="NavUserIcon" src="./misc/DragonStudio.png">
+                            </div>
+                            
+                            <ul class="UserSecondMenu">
+                                <li class="UserSecondElement UserInfoElement">
+                                    <div class="UserLargeImgContainer">
+                                        <img class="UserLargeImg" src="./misc/DragonStudio.png">
+                                    </div>
+                                    <div class="UserName">
+                                        <span>腾龙Dragon工作室</span>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserStateElement">
+                                    <div class="UserScore">
+                                        <img class="UserScoreIconShow" src="./misc/UMIcons/ScoreIcon.png">
+                                        <div class="UserScoreCount">100</div>
+                                    </div>
+                                    <div class="UserLevel"></div>
+                                </li>
+                                <li class="UserSecondElement UserLevelShowElement">
+                                    
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Info.png">
+                                    <div class="UserElementInst">
+                                        <label>用户信息</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Score.png">
+                                    <div class="UserElementInst">
+                                        <label>积分管理</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Ban.png">
+                                    <div class="UserElementInst">
+                                        <label>封禁记录</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Feedback.png">
+                                    <div class="UserElementInst">
+                                        <label>给予反馈</label>
+                                    </div>
+                                </li>
+                                <li class="UserSecondElement UserElementCanSelectable">
+                                    <img class="UserElementIcon" src="./misc/UMIcons/Settings.png">
+                                    <div class="UserElementInst">
+                                        <label>设置</label>
+                                    </div>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="NavEndShow">
+                        <div class="NavEndLiElement NavEndSearch">
+                            <input class="NavEndSearchBox" type="search" placeholder="伪Spotlight..."/>
+                            <div class="NavSearchIcon">
+                                <label>🔍</label>
+                            </div>
+                    </div>
+                    </li class="NavEndShow">
+                    <li>
+                        <div class="NavEndLiElement PersonShowContainer">
+                            <div class="PersonShowPanel">
+                                <div class="PersonShow">
+                                    <div class="NavCircle Green"></div>
+                                    <span>
+                                        在线人数 30
+                                    </span>
+                                </div>
+                                <div class="PersonShow">
+                                    <div class="NavCircle Blue"></div>
+                                    <span>
+                                        总共来访 3.5w
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="WindowArea">
+            <div class="WMLLeftSide">
+                <div class="WMLLeftTitle">
+                    邮件
+                </div>
+                <div class="WMLChooseSearch">
+                    <input type="search" class="WMLChooseSearchBox" placeholder="搜索邮件...">
+                </div>
+                <div class="WMLChooseBar">
+                    <div class="WMLSelectable">
+                        <label class="WMLSelectIconLabel"><img src="./misc/MailIcon/ReadMail.png" class="WMLSelectIcon"></label>
+                        <div class="WMLSelectText"><label>已读邮件</label></div>
+                        <div class="WMLSelectCount Green"><label>114</label></div>
+                    </div>
+                    <div class="WMLSelectable">
+                        <label class="WMLSelectIconLabel"><img src="./misc/MailIcon/NoReadMail.png" class="WMLSelectIcon"></label>
+                        <div class="WMLSelectText"><label>未读邮件</label></div>
+                        <div class="WMLSelectCount Blue"><label>514</label></div>
+                    </div>
+                    <div class="WMLSelectable">
+                        <label class="WMLSelectIconLabel"><img src="./misc/MailIcon/ImpMail.png" class="WMLSelectIcon"></label>
+                        <div class="WMLSelectText"><label>重要邮件</label></div>
+                        <div class="WMLSelectCount Red"><label>1919</label></div>
+                    </div>
+                    <div class="WMLSelectable">
+                        <label class="WMLSelectIconLabel"><img src="./misc/MailIcon/RubbishMail.png" class="WMLSelectIcon"></label>
+                        <div class="WMLSelectText"><label>垃圾邮件</label></div>
+                        <div class="WMLSelectCount HMLRubbishCount Glass"><label>810</label></div>
+                    </div>
+                </div>
+                <div class="WMLBottomInfo">
+                    <div class="WMLBottomInfoText"><label>此功能版本:ML-T1(HM22A1)</label></div>
+                </div>
+            </div>
+            <div class="WMMainFrame">
+                <div class="WindowHead HMMFOpNav">
+                    <div class="HMMFOperarte">
+                        <div class="HMMFOperateBtn"></div>
+                        <div class="HMMFOperateBtn"></div>
+                        <div class="HMMFOperateBtn"></div>
+                    </div>
+                    <div class="HMMFHeadNav">
+                        <div class="HMMFMailState">
+                            <div class="HMMFMailOpenInfo HMMFBorderRect">
+                                <span>已经打开邮件:Welcome To HWT!</span>
+                            </div>
+                            <div class="HMMFMailIsImportant HMMFBorderRect">
+                                <span>重要邮件!</span>
+                            </div>
+                            <div class="WindowHeadMain WhiteBorder HMMFHead">
+                                <div class="WindowIcon">
+                                    <label><img src="./misc/Starter/StartIcon.png"></label>
+                                </div>
+                                <div class="WindowTitle WhiteText">
+                                    邮件
+                                </div>
+                            </div>
+                        </div>
+                        <div class="HMMFMailInfo">
+                            <div class="HMMFMailInfoContainer">
+                                <div class="HMMFMailInfoE">
+                                    <span>抄送</span>
+                                    <div class="HMMFShowBox">The author of HWT,Sudo-su-Bash</div>
+                                </div>
+                                <div class="HMMFMailInfoE">
+                                    <span>收件人</span>
+                                    <div class="HMMFShowBox">User114514-1919810</div>
+                                </div>
+                                <div class="HMMFMailInfoE">
+                                    <span>主题</span>
+                                    <div class="HMMFShowBox">Welcome to HWT!</div>
+                                </div>
+                                <div class="HMMFMailInfoE">
+                                    <span>发送时间</span>
+                                    <div class="HMMFShowBox">2023-05-23 09:41:25</div>
+                                </div>
+                                <div class="HMMFMailInfoE">
+                                    <span>过期时间</span>
+                                    <div class="HMMFShowBox">Not Avaliable</div>
+                                </div>
+                            </div>
+                            <div class="HMMFMailInfoState">
+                                <div class="HMMFMailInfoStateContainer">
+                                    <span class="HMMFStateText">状态</span>
+                                    <div class="HMMFMailInfoStateE">
+                                        <span class="HMMFMailInfoStateIcon HMMFMailYes">Y</span>
+                                        <span class="HMMFMailInfoStateTxt">读取邮件状态</span>
+                                    </div>
+                                    <div class="HMMFMailInfoStateE">
+                                        <span class="HMMFMailInfoStateIcon HMMFMailNo">N</span>
+                                        <span class="HMMFMailInfoStateTxt">同意邮件状态</span>
+                                    </div>
+                                    <div class="HMMFMailInfoStateE">
+                                        <span class="HMMFMailInfoStateIcon HMMFMailNA">N/A</span>
+                                        <span class="HMMFMailInfoStateTxt">奖励领取状态</span>
+                                    </div>
+                                    <div class="HMMFMailInfoStateE">
+                                        <span class="HMMFMailInfoStateIcon HMMFMailNA">N/A</span>
+                                        <span class="HMMFMailInfoStateTxt">投票已投状态</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="HMMFBody">
+                    <div class="HMMFBTitle">
+                        欢迎来到HWT!
+                    </div>
+                    <hr>
+                    <div class="HMMFBSubject">
+                        <p class="HMMFBContentNoIndent">你好,User114514-1919810:</p>
+                        <p class="HMMFBContentPara">欢迎来到HWT!这是你在HWT星球的第一天,我特地做了这封邮件以祝贺你来到HWT.</p>
+                        <p class="HMMFBContentPara">在这儿,你将会获得超!级!牛!力!(致敬apt软件管理包和牛父)</p>
+                        <p class="HMMFBContentPara">现在,就由你来尽情探索一下吧!</p>
+                        <p class="HMMFBContentPara">
+                            首先,来看一下HWT的功能部分.以下内容可能你会感兴趣:
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            1.多种多样的配置器</a>
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            2.从资源仓库里面下载kexts,driver和主题...</a>
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            3.DSDT的线上编译,打补丁和改错...(仅在4级以上可用)</a>
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            4.作者及其工作室的博客</a>
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            5.黑苹果HWT论坛系统</a>
+                        </p>
+                        <p class="HMMFBContentFourEM">
+                            <a href="#">
+                                <i class="bi bi-arrow-down-right-circle"></i>
+                            6.快速及方便的配置选项...</a>
+                        </p>
+                        <p class="HMMFBContentPara">
+                            遇到一些新手问题?建议你可以去&nbsp;<a href="#"><i class="bi bi-arrow-down-right-circle"></i>
+                                阅读新手教程!</a>
+                        </p>
+                        <p class="HMMFBContentPara">
+                            遇到一些Bug?&nbsp;<a href="#"><i class="bi bi-arrow-down-right-circle"></i>
+                                给HWT予反馈!</a>(注意,为了防止恶意访问,Dragon Studio设定了限定反馈次数,每天每个账户限制反馈<span style="color:red">3</span>次)
+                        </p>
+                        <p class="HMMFBContentPara">
+                            还有,我强烈建议你去
+                            <a href="#"><i class="bi bi-arrow-down-right-circle"></i>
+                                绑定邮箱</a>,因为绑定邮箱可以获得丰厚奖励!&nbsp;
+                            <a href="#"><i class="bi bi-arrow-down-right-circle"></i>
+                                    点击查看详情...</a>
+                        </p>
+                        <p class="HMMFBContentPara">
+                            感谢你对于Sudo-su-Bash的陪伴!你的注册将会给一个到现在为止一直缺被爱和被尊重的人--Sudo-su-Bash,最好的开发动力!
+                        </p>
+                        <p class="HMMFBContentPara">
+                            在这封信的最后,Sudo-su-Bash再次祝你有一个愉快的HWT星球的旅途!旅途愉快!
+                        </p>
+                        <p class="HMMFBContentEnd">
+                            <span>你忠实的</span><br>
+                            <span>朋友</span><br>
+                            <span>Sudo-su-Bash</span><br>
+                            <span>2023-05-23</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(()=>{
+            $(".NavSearchIcon").click(()=>{
+                document.getElementsByClassName("NavEndSearchBox")[0].focus();
+            })
+        })
+    </script>
+</html>

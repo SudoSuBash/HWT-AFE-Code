@@ -1,0 +1,59 @@
+Arrow.pngbody {
+    background: transparent;
+}
+
+#AboutMsgBox {
+    display: block;
+    width: 330px;
+    height: 95px;
+}
+
+#AboutMsgBox_Body {
+    display: block;
+}
+
+#AboutMsgBox_Body>img {
+    display:inline-block;
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+#AboutMsgBox_Main {
+    vertical-align: top;
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#AboutMsgBox_Main span a {
+    text-decoration: none;
+    color:brown;
+    transition: all 100ms;
+}
+
+#AboutMsgBox_Main span a:hover {
+    color:red;
+}
+
+
+#EndButton input {
+    border-radius: 3px;
+    font-size: 12px;
+    -webkit-transform:scale(0.8);
+    width: 75px;
+    float: right;
+    background-color:lightblue;
+    border: 1px solid black;
+    transition:all 100ms;
+}
+
+#EndButton input:hover {
+    background-color:rgb(106, 177, 205) ;
+}
+
+#EndButton input:active {
+    background-color:rgb(56, 160, 201) ;
+}
