@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="./css/NAQUMView.css"/>
         <link rel="stylesheet" type="text/css" href="./css/setting.css"/>
         <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/NAQWindowStyle2.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/about.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     </head>
@@ -245,60 +247,66 @@
                     </div>
                 </div>
             </div>
-            <div class="WMMainFrame HMAboutMainFrame">
-                <div id="HMAboutHeadSign">
-                    <img id="HMAMainIcon" src="./misc/SudosuBash.png">
-                    <div id="HMAWholeSign">
-                        <span id="HWTAName">Hackintosh Web ToolBox</span><br>
-                        <span id="HWTAStudio">由 Dragon Studio 出版,Dragon Studio 拥有其所有权.</span><br>
-                        <span id="HWTAVersion">版本 Inside Test 1 (231502-BIRTHDAY SPECIAL)</span><br>
-                        <span id="HWTAAttention">本产品具有<span style="color:red">超级牛力</span>.</span>
+        </div>
+        <div class="full-window">
+            <div class="about-window-main">
+                <div class="product-showbox">
+                    <div class="product-showbox-index">
+                        <img src="./misc/SudosuBash.png" class="product-icon">
+                        <div class="product-show-text">
+                            <div class="product-show-text-container">
+                                <span class="product-show-title">Hackintosh Web ToolBox</span><br>
+                                <span class="product-show-version pst-small-1-text">版本 Test 1 (235201-Inside Test)</span><br>
+                                <span class="product-show-copyright pst-small-2-text">DRAGON STUDIO 出版.<span style="color: red;">保留一切权利.</span></span><br>
+                                <span class="product-show-copyright pst-smallest-text">主题展示版本.仅供内部测试使用.</span><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="HMA-Builders">
-                    <div class="HMA-Builders-Title">
+                <div class="product-builders">
+                    <div class="product-builders-title">
                         制作人员名单
                     </div>
-                    <div class="HMA-Builders-Info-Panel">
-                        <div class="HMA-Single-Builder">
-                            <div class="HMA-Build-Image-Container HMA-Builder-Element">
-                                <img class="HMA-Build-Image" src="./misc/SudosuBash.png">
+                    <div class="product-builders-info-panel">
+                        <div class="product-single-builder">
+                            <div class="product-build-image-container product-builder-element">
+                                <img class="product-build-image" src="./misc/SudosuBash.png">
                             </div>
 
-                            <div class="HMA-Builder-Name HMA-Builder-Element">
+                            <div class="product-builder-name product-builder-element">
                                 
                                 Sudo-su-Bash
                             </div>
-                            <div class="HMA-Builder-Bilibili HMA-Builder-Element">
-                                <a class="HMA-Builder-Job-Link-Text" href="https://space.bilibili.com/628243105/">
+                            <div class="product-builder-bilibili product-builder-element">
+                                <a class="product-builder-job-link-text" href="https://space.bilibili.com/628243105/">
                                     <i class="bi bi-arrow-down-right-circle"></i>
                                 去看Ta的B站</a>
                             </div>
-                            <div class="HMA-Builder-Job-Link">
-                                <a class="HMA-Builder-Job-Link-Text" href="#">
+                            <div class="product-builder-job-link">
+                                <a class="product-builder-job-link-text" href="#">
                                     <i class="bi bi-arrow-down-right-circle"></i>
                                 查看职位</a>
-                                <div class="HMA-Builder-Job">
-                                    <div class="HMA-Builder-Job-Title">职位</div>
-                                    <ul class="HMA-Builder-Job-Container">
-                                        <li class="HMA-Builder-Job-Element Red">
-                                            <div class="HMA-Builder-Job-Element-Text">
+                                <div class="product-builder-job">
+                                    <div class="product-builder-job-title">职位</div>
+                                    <ul class="product-builder-job-container">
+                                        <li class="product-builder-job-element Red">
+                                            <div class="product-builder-job-element-text">
                                                 总设计师
                                             </div>
                                         </li>
-                                        <li class="HMA-Builder-Job-Element Yellow">
-                                            <div class="HMA-Builder-Job-Element-Text">
-                                                前端主要工程师
+                                        <li class="product-builder-job-element Yellow">
+                                            <div class="product-builder-job-element-text">
+                                                前端工程师
                                             </div>
                                         </li>
-                                        <li class="HMA-Builder-Job-Element Blue">
-                                            <div class="HMA-Builder-Job-Element-Text">
-                                                后端主要工程师
+                                        <li class="product-builder-job-element Blue">
+                                            <div class="product-builder-job-element-text">
+                                                后端工程师
                                             </div>
                                         </li>
 
-                                        <li class="HMA-Builder-Job-Element Green">
-                                            <div class="HMA-Builder-Job-Element-Text">
+                                        <li class="product-builder-job-element Green">
+                                            <div class="product-builder-job-element-text">
                                                 代码审查师
                                             </div>
                                         </li>
@@ -307,51 +315,134 @@
                             </div>
 
                         </div>
-                        <div class="HMA-Single-Builder">
-                            <div class="HMA-Build-Image-Container HMA-Builder-Element">
-                                <img class="HMA-Build-Image" src="./misc/DragonStudio.png">
+                        <div class="product-single-builder">
+                            <div class="product-build-image-container product-builder-element">
+                                <img class="product-build-image" src="./misc/DragonStudio.png">
                             </div>
 
-                            <div class="HMA-Builder-Name HMA-Builder-Element">
+                            <div class="product-builder-name product-builder-element">
                                 
                                 Dragon Studio
                             </div>
-                            <div class="HMA-Builder-Bilibili HMA-Builder-Element">
-                                <a class="HMA-Builder-Job-Link-Text" href="https://space.bilibili.com/1162150931">
+                            <div class="product-builder-bilibili product-builder-element">
+                                <a class="product-builder-job-link-text" href="https://space.bilibili.com/628243105/">
                                     <i class="bi bi-arrow-down-right-circle"></i>
                                 去看Ta的B站</a>
                             </div>
-                            <div class="HMA-Builder-Job-Link HMA-Builder-Element">
-                                <a class="HMA-Builder-Job-Link-Text" href="#">
+                            <div class="product-builder-job-link">
+                                <a class="product-builder-job-link-text" href="#">
                                     <i class="bi bi-arrow-down-right-circle"></i>
                                 查看职位</a>
-                                <div class="HMA-Builder-Job">
-                                    <div class="HMA-Builder-Job-Title">职位</div>
-                                    <ul class="HMA-Builder-Job-Container">
-                                        <li class="HMA-Builder-Job-Element Purple">
-                                            <div class="HMA-Builder-Job-Element-Text">
-                                                总工作室
+                                <div class="product-builder-job">
+                                    <div class="product-builder-job-title">职位</div>
+                                    <ul class="product-builder-job-container">
+                                        <li class="product-builder-job-element Purple">
+                                            <div class="product-builder-job-element-text">
+                                                工作室
                                             </div>
                                         </li>
-                                        <li class="HMA-Builder-Job-Element Black">
-                                            <div class="HMA-Builder-Job-Element-Text">
-                                                总负责
-                                            </div>
-                                        </li>
-                                        <li class="HMA-Builder-Job-Element Pink RedText">
-                                            <div class="HMA-Builder-Job-Element-Text">
-                                                贡献极大!
+                                        <li class="product-builder-job-element Pink">
+                                            <div class="product-builder-job-element-text">
+                                                图标设计
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
+                        <div class="product-single-builder">
+                            <div class="product-build-image-container product-builder-element">
+                                <img class="product-build-image" src="./misc/FunctionIcons/CCL.png">
+                            </div>
+
+                            <div class="product-builder-name product-builder-element">
+                                
+                                uihd
+                            </div>
+                            <div class="product-builder-bilibili product-builder-element">
+                                <a class="product-builder-job-link-text" href="https://space.bilibili.com/628243105/">
+                                    <i class="bi bi-arrow-down-right-circle"></i>
+                                去看Ta的B站</a>
+                            </div>
+                            <div class="product-builder-job-link">
+                                <a class="product-builder-job-link-text" href="#">
+                                    <i class="bi bi-arrow-down-right-circle"></i>
+                                查看职位</a>
+                                <div class="product-builder-job">
+                                    <div class="product-builder-job-title">职位</div>
+                                    <ul class="product-builder-job-container">
+                                        <li class="product-builder-job-element Yellow">
+                                            <div class="product-builder-job-element-text">
+                                                前端工程师
+                                            </div>
+                                        </li>
+                                        <li class="product-builder-job-element Blue">
+                                            <div class="product-builder-job-element-text">
+                                                后端工程师
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-versions">
+                    <div class="product-versions-element browser-info">
+                        <ul class="pve-ul">
+                            <li class="pve-ul-title">
+                                <img src="./misc/Browsers/Chrome.png" class="pve-browser-icon"><br>
+                                <span>Chromium</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">浏览器类型</span>
+                                <span class="pve-ul-kv-right">Chromium</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">版本</span>
+                                <span class="pve-ul-kv-right">106.0.0.0</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">操作系统</span>
+                                <span class="pve-ul-kv-right">macOS Ventura 13</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">内核版本</span>
+                                <span class="pve-ul-kv-right">Darwin 23.0.1</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-versions-element product-detail">
+                        <ul class="pve-ul">
+                            <li class="pve-ul-title">
+                                <img src="./misc/SudosuBash.png" class="pve-browser-icon"><br>
+                                <span>HWT 版本信息</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">HWT版本</span>
+                                <span class="pve-ul-kv-right">Test 1,仅供主题展示</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">版本号</span>
+                                <span class="pve-ul-kv-right">Theme Test</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">主题类型</span>
+                                <span class="pve-ul-kv-right">New Aqua Theme(NAT)</span>
+                            </li>
+                            <li class="pve-ul-element">
+                                <span class="pve-ul-kv-left">主题版本</span>
+                                <span class="pve-ul-kv-right">T-232501</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+
     <script>
         $(document).ready(()=>{
             $(".NavSearchIcon").click(()=>{
