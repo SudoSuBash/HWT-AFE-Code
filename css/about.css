@@ -1,6 +1,6 @@
 .about-window-main {
     width: 680px;
-    height: 630px;
+    max-height: 630px;
     background-color: wheat;
     border-radius: 10px;
     padding: 10px;
@@ -11,6 +11,12 @@
     display: none;
 }
 
+.product-element {
+    margin-top: 4px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    background-color: white;
+}
 
 .product-showbox {
     color: white;
@@ -60,10 +66,7 @@
 }
 
 .product-builders {
-    margin-top: 6px;
-    box-shadow: 0 0 10px grey;
     padding: 5px;
-    border-radius: 5px;
     background-color: rgba(255, 255, 255);
 }
 
@@ -175,10 +178,10 @@
 }
 
 .product-versions-element {
-    width: calc(50% - 14px);
-    background-color: white;
     box-shadow: 0 0 10px grey;
     border-radius: 10px;
+    width: calc(50% - 14px);
+    background-color: white;
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -213,4 +216,90 @@
 
 .pve-ul-kv-right {
     margin-left: auto;
+}
+
+.product-supercow {
+    margin-top: 6px;
+    padding: 5px;
+    width: calc(100% - 10px);
+    text-align: center;
+}
+
+.product-supercow-title {
+
+    font-size: 12px;
+}
+
+.product-supercow-text {
+    display: flex;
+    justify-content: center;
+}
+
+.product-supercow-super {
+    margin-top: 0;
+    color: red;
+    font-size: 60px;
+}
+.product-supercow-level {
+    color: yellow;
+    font-size: 60px;
+}
+.product-supercow-cow {
+    color: blue;
+    font-size: 60px;
+}
+.product-supercow-power {
+    color: green;
+    font-size: 60px;
+}
+
+.product-supercow-line {
+    display: flex;
+}
+
+.product-supercow-font {
+    line-height: 60px;
+}
+
+.product-supercow-thanks {
+    margin-top: 3px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 2px;
+    padding-left: 7px;
+}
+
+.supercow-thanks-title {
+    color: blue;
+    text-align: left;
+    font-size: 25px;
+    justify-self: left;
+}
+
+.supercow-thanks-area {
+    display: flex;
+    justify-content: center;
+}
+
+.supercow-thanks-element {
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 15px;
+}
+
+.ske-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.ske-name {
+    font-weight: bold;
+}
+
+.ske-desc {
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
 }
