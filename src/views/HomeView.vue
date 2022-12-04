@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="Windowbody WQuickStart">
+        <div class="WindowBody WQuickStart">
             <QuickStart />
         </div>
         </template>
@@ -24,11 +24,4 @@
 import NAQNav from '@/components/NAQNav.vue'
 import NAQWindow from '@/components/NAQWindow.vue'
 import QuickStart from '@/components/QuickStart.vue'
-/*
-    $(document).ready(()=>{
-        $(".NavSearchIcon").click(()=>{
-            
-            document.getElementsByClassName("NavEndSearchBox")[0].focus();
-        })
-    })*/
 </script>
