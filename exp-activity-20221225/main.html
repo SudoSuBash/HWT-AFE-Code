@@ -15,11 +15,11 @@
                 </div>
                 <div class="activity-menu">
                     <div class="activity-button question-button">
-                        <label>?</label>
+                        <div class="activity-btn-text"><label>?</label></div>
                     </div>
 
                     <div class="activity-button close-button">
-                        <div><label>×</label></div>
+                        <div class="activity-btn-text"><label>x</label></div>
                     </div>
                 </div>
             </div>
@@ -38,8 +38,8 @@
                             </div>
                         </li>
                         <li><img class="activity-lists-image" src="./test.webp"></li>
-                        <li><img class="activity-lists-image" src="./test.webp"></li>
-                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                        <li><img class="activity-lists-image" src="./test.jpg"></li>
+                        <li><img class="activity-lists-image" src="./test3.jpg"></li>
                         <li><img class="activity-lists-image" src="./test.webp"></li>
                         <li><img class="activity-lists-image" src="./test.webp"></li>
                     </ul>
@@ -65,6 +65,10 @@
                                 <li class="activity-detail-element">
                                     <div class="activity-column-left">状态</div>
                                     <div class="activity-column-right">进行中(可点击图片进入活动页面)</div>
+                                </li>
+                                <li class="activity-detail-element">
+                                    <div class="activity-column-left">可参与用户</div>
+                                    <div class="activity-column-right">Lv.1 及以上用户<div>
                                 </li>
                             </ul>
                         </div>
@@ -254,6 +258,14 @@
             
         }
 
+        .activity-btn-text {
+            display: none;
+        }
+
+        .activity-button:hover > .activity-btn-text {
+            display: block;
+        }
+        
         .question-button {
             background-color: rgba(128, 128, 128, 0.925);
         }
