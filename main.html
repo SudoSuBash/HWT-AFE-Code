@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>experiment1</title>
+    </head>
+    <body>
+        <div id="activitity-window">
+            <div class="activitity-window-head">
+                <div class="activitity-window-title">
+                    <span id="main-title">活动和事件</span><br>
+                    <span id="second-title">查看已发布的所有活动</span>
+                </div>
+                <div class="activitity-searchbox">
+                    <input type="search" name="activity-sbox" id="activitity-search" placeholder="搜索什么...">
+                </div>
+                <div class="activity-menu">
+                    <div class="activity-button question-button">
+                        <label>?</label>
+                    </div>
+
+                    <div class="activity-button close-button">
+                        <label>×</label>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-window-body">
+                <div class="activity-window-lists">
+                    <div class="activity-window-title">
+                        <span>活动列表</span>
+                    </div>
+                    <ul class="activity-window-listbox">
+                        <li>
+                            <div class="activity-showbox">
+                                <div class="activity-looking">
+                                    <span>正在查看</span>
+                                </div>
+                                <img class="activity-lists-image" src="./test.webp">
+                            </div>
+                        </li>
+                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                        <li><img class="activity-lists-image" src="./test.webp"></li>
+                    </ul>
+                </div>
+                <div class="activity-window-details"></div>
+            </div>
+        </div>
+    </body>
+    <style>
+        @font-face {
+            font-family: 'PingfangSC-1';
+            src: url("./fonts/Pingfang-ZhongCu.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PingfangSC-2';
+            src: url("./fonts/Pingfang-Xi.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,html {
+            min-width: 800px;
+            height: 100%;
+            min-height: 600px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(185, 185, 185, 0.484);
+        }
+
+        #activitity-window {
+            width: 750px;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+
+        .activitity-window-head {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(195, 195, 195);
+        }
+
+        .activitity-window-title {
+            line-height: 13px;
+            text-align: center;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        #main-title {
+            font-family: PingFangSC-1, sans-serif;
+            font-size: 18px;
+        }
+
+        #second-title {
+            font-family: PingfangSC-2, sans-serif;
+            font-size: 12px;
+            scale: 0.8;
+            color: gray;
+        }
+
+        #activitity-search {
+            height: 20px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.3);
+            padding-left: 5px;
+            outline: none;
+            border: none;
+            font-size: 12px;
+        }
+
+        .activitity-searchbox {
+            margin-left: 5px;
+        }
+
+        .activity-window-body {
+            display: flex;
+            width: 100%;
+            height: calc(100% - 40px);
+        }
+
+        .activity-window-lists {
+            display: block;
+            width: 20%;
+            border-right: 1px solid rgb(195, 195, 195);
+        }
+
+        .activity-window-details {
+            width: 75%;
+        }
+
+        .activity-window-title {
+            text-align: center;
+            font-family: PingfangSC-2, sans-serif;
+            color: gray;
+            font-size: 12px;
+
+        }
+
+        .activity-window-title > span {
+            transform: scale(0.7); 
+        }
+
+        .activity-window-listbox {
+            width: 100%;
+            list-style: none;
+            height: calc(100% - 16.8px);
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .activity-window-listbox::-webkit-scrollbar {
+            display: none;
+        }
+        /*All the element in this listbox*/
+        .activity-window-listbox > li {
+            
+            padding: 5px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            height: 60px;
+        }
+
+        .activity-lists-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+
+        .activity-showbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .activity-looking {
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            transform-origin: 0%;
+            transform: scale(0.7);
+            background-color: green;
+            padding: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 12px;
+            margin-left: 2px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+
+        .activity-button {
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+            height: 15px;
+            width: 15px;
+
+            border-radius: 50%;
+
+            margin-left: 2px;
+            margin-right: 2px;
+            box-shadow: 0px 0px 5px 1px grey;
+            
+        }
+
+        .question-button {
+            background-color: rgba(128, 128, 128, 0.925);
+        }
+        .close-button { 
+            background-color: red;
+        }
+
+        .activity-menu {
+            background-color: rgba(128, 128, 128, 0.305);
+            display: flex;
+            margin-left: auto;
+            margin-right: 10px;
+            padding: 2px 7px;
+            border-radius: 40px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+    </style>
+</html>
