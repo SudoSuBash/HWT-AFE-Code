@@ -4,14 +4,14 @@
         <title>experiment1</title>
     </head>
     <body>
-        <div id="activitity-window">
-            <div class="activitity-window-head">
-                <div class="activitity-window-title">
+        <div id="activity-window">
+            <div class="activity-window-head">
+                <div class="activity-window-title">
                     <span id="main-title">活动和事件</span><br>
                     <span id="second-title">查看已发布的所有活动</span>
                 </div>
-                <div class="activitity-searchbox">
-                    <input type="search" name="activity-sbox" id="activitity-search" placeholder="搜索什么...">
+                <div class="activity-searchbox">
+                    <input type="search" name="activity-sbox" id="activity-search" placeholder="搜索什么...">
                 </div>
                 <div class="activity-menu">
                     <div class="activity-button question-button">
@@ -19,13 +19,13 @@
                     </div>
 
                     <div class="activity-button close-button">
-                        <label>×</label>
+                        <div><label>×</label></div>
                     </div>
                 </div>
             </div>
             <div class="activity-window-body">
                 <div class="activity-window-lists">
-                    <div class="activity-window-title">
+                    <div class="activity-window-list-title">
                         <span>活动列表</span>
                     </div>
                     <ul class="activity-window-listbox">
@@ -44,25 +44,51 @@
                         <li><img class="activity-lists-image" src="./test.webp"></li>
                     </ul>
                 </div>
-                <div class="activity-window-details"></div>
+                <div class="activity-window-details">
+                    <div class="activity-detail-img">
+                        <img class="activity-detail-image" src="./test.webp">
+                        <div class="activity-detail-info">
+                            <ul class="activity-detail-box">
+                                <li class="activity-detail-title">活动信息</li>
+                                <li class="activity-detail-element">
+                                    <div class="activity-column-left">活动名称</div>
+                                    <div class="activity-column-right" style="font-weight: bolder;">HWT 公测一周年纪念</div>
+                                </li>
+                                <li class="activity-detail-element">
+                                    <div class="activity-column-left">开始时间</div>
+                                    <div class="activity-column-right">2023-05-23</div>
+                                </li>
+                                <li class="activity-detail-element">
+                                    <div class="activity-column-left">持续</div>
+                                    <div class="activity-column-right">6 天</div>
+                                </li>
+                                <li class="activity-detail-element">
+                                    <div class="activity-column-left">状态</div>
+                                    <div class="activity-column-right">进行中(可点击图片进入活动页面)</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
     <style>
         @font-face {
             font-family: 'PingfangSC-1';
-            src: url("./fonts/Pingfang-ZhongCu.ttf");
+            src: url("../fonts/Pingfang-ZhongCu.ttf");
             font-weight: normal;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'PingfangSC-2';
-            src: url("./fonts/Pingfang-Xi.ttf");
+            src: url("../fonts/Pingfang-Xi.ttf");
             font-weight: normal;
             font-style: normal;
         }
         * {
+            font-family: PingFangSC-2, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -79,7 +105,11 @@
             background-color: rgba(185, 185, 185, 0.484);
         }
 
-        #activitity-window {
+        ul {
+            list-style: none;
+        }
+
+        #activity-window {
             width: 750px;
             height: 400px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -87,7 +117,7 @@
             box-shadow: 0px 0px 5px 1px grey;
         }
 
-        .activitity-window-head {
+        .activity-window-head {
             position: relative;
             width: 100%;
             height: 40px;
@@ -96,7 +126,7 @@
             border-bottom: 1px solid rgb(195, 195, 195);
         }
 
-        .activitity-window-title {
+        .activity-window-title {
             line-height: 15px;
             text-align: center;
             transform: translate(-50%,-50%);
@@ -104,6 +134,7 @@
             left: 50%;
             top: 50%;
         }
+
         #main-title {
             font-family: PingFangSC-1, sans-serif;
             font-size: 18px;
@@ -116,7 +147,7 @@
             color: gray;
         }
 
-        #activitity-search {
+        #activity-search {
             height: 20px;
             width: 150px;
             border-radius: 5px;
@@ -127,7 +158,7 @@
             font-size: 12px;
         }
 
-        .activitity-searchbox {
+        .activity-searchbox {
             margin-left: 5px;
         }
 
@@ -144,10 +175,11 @@
         }
 
         .activity-window-details {
-            width: 75%;
+            width: 80%;
+            padding: 10px;
         }
 
-        .activity-window-title {
+        .activity-window-list-title {
             text-align: center;
             font-family: PingfangSC-2, sans-serif;
             color: gray;
@@ -215,9 +247,7 @@
             justify-content: center;
             height: 15px;
             width: 15px;
-
             border-radius: 50%;
-
             margin-left: 2px;
             margin-right: 2px;
             box-shadow: 0px 0px 5px 1px grey;
@@ -227,6 +257,7 @@
         .question-button {
             background-color: rgba(128, 128, 128, 0.925);
         }
+
         .close-button { 
             background-color: red;
         }
@@ -240,5 +271,55 @@
             border-radius: 40px;
             box-shadow: 0px 0px 5px 1px grey;
         }
+
+        .activity-detail-image {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+
+        .activity-detail-img {
+            position: relative;
+            width: 100%;
+            height: 100%; 
+        }
+
+        .activity-detail-info {
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            padding: 3px;
+            background-color: rgba(255, 192, 203, 0.75);
+            border: 1px solid palevioletred;
+            border-radius: 5px;
+            
+        }
+        .activity-detail-box {
+            font-size: 12px;
+            line-height: 13px;
+        }
+
+        .activity-detail-title {
+            min-width: 150px;
+            font-family: PingFangSC-1, sans-serif;
+            text-align: center;
+        }
+
+        .activity-detail-element {
+            display: flex;
+            align-items: center
+        }
+
+        .activity-column-left {
+            transform-origin: 0 50%;
+            scale: 0.8;
+        }
+
+        .activity-column-right{
+            transform-origin: 100% 50%;
+            scale: 0.8;
+            margin-left: auto;
+        }
     </style>
-</html>
+</html> 
