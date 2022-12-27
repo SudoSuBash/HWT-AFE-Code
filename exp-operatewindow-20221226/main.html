@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Verify Example</title>
+    </head>
+    <body>
+        <div class="background-window">
+            <div class="verify-head-title">
+                <img class="verify-head-title-img" src="./test.webp">
+                <h1 class="verify-head-title-text">Step Window Model</h1>
+            </div>
+            <div class="window-info">
+                <div id="window-info-left">
+                    Handle ID:EPLEHDID
+                    </div>
+                <div id="window-info-right">
+                    此窗口从打开起会在<span style="color: red;"> 5 </span>分钟后过期
+                    </div> 
+            </div>
+            <div class="verify-module-container">
+                <div class="verify-expire">
+                    <div class="verify-module-head">
+                        <div class="verify-module-expire-icon">E</div>
+                        <div class="verify-module-step-text">此窗口已经过期.</div>
+                    </div>
+                    <div class="verify-module-desc">
+                        这个窗口已经过期.请<span style="color: red;">关闭此窗口并且重新打开一个新窗口</span>以继续未完成的操作.
+                    </div>
+                </div>
+                <div class="verify-module">
+                    <div class="verify-module-head">
+                        <div class="verify-module-step-icon">1</div>
+                        <div class="verify-module-step-text">STEP 1:操作步骤1...</div>
+                    </div>
+                    <div class="verify-module-operate-panel">
+
+                    </div>
+                </div>
+                <div class="verify-module">
+                    <div class="verify-module-head">
+                        <div class="verify-module-step-icon">2</div>
+                        <div class="verify-module-step-text">STEP 2:操作步骤2...</div>
+                    </div>
+                    <div class="verify-module-operate-panel">
+                        
+                    </div>
+                </div>
+                <div class="verify-module">
+                    <div class="verify-module-head">
+                        <div class="verify-module-step-icon">3</div>
+                        <div class="verify-module-step-text">STEP 3:验证是操作员本人操作</div>
+                    </div>
+                    <div class="verify-module-desc">
+                        为了验证是操作员本人操作.需要提供<span style="color: red;">此账号对应的操作员代号(不是操作员自定义账号!!!)</span>和操作员代号对应的密码以继续操作.输入好后点击验证继续.<br>
+                        注意:<span style="color: red;">请谨慎填写.若多次填写错误,该操作员账户有可能会!被!封!禁!</span>
+                    </div>
+                    <div class="verify-module-operate-panel">
+                        <div class="verify-module-input-box">
+                            <div class="verify-module-key">操作员代号</div>
+                            <input type="text" class="verify-module-input" placeholder="输入账户对应操作员代号">
+                        </div>
+                        <div class="verify-module-input-box">
+                            <div class="verify-module-key">密码</div>
+                            <input type="password" class="verify-module-input" placeholder="输入密码">
+                        </div>
+                        <div class="verify-bottom">
+                            <div class="bottom-left-menu">
+                                <div class="question-button">
+                                    ?
+                                </div>
+                                <div class="status-text red-text">
+                                    状态:操作员ID输入错误.你还有3次机会,若机会用完此账户将被封锁.
+                                </div>
+                            </div>
+                            <div class="bottom-right-menu">
+                                <input type="button" class="common-button-bottom" value="验证">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+    <style>
+        @font-face {
+            font-family: 'PingfangSC-1';
+            src: url("../fonts/Pingfang-ZhongCu.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PingfangSC-2';
+            src: url("../fonts/Pingfang-Xi.ttf");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        * {
+            font-family: PingFangSC-2, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html {
+            min-width: 800px;
+            height: 100%;
+            min-height: 600px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(185, 185, 185, 0.484);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .background-window {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 500px;
+            max-height: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+    
+        .verify-head-title {
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .verify-head-title-text {
+            font-weight: bolder;
+            font-family: PingfangSC-1, sans-serif;
+        }
+
+        .verify-head-title-img {
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .window-info {
+            font-size: small;
+            display: flex;
+        }
+
+        #window-info-left {
+            margin-left: 5px;
+        }
+        
+        #window-info-right {
+            margin-left: auto;
+            margin-right: 5px;
+        }
+    </style>
+    <style>
+        .verify-module {
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+
+        .verify-module-container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 2px 5px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            overflow-y: auto;
+        }
+
+        .verify-module-head {
+            display: flex;
+            align-items: center;
+
+        }
+        .verify-module-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .verify-module-container :first-child {
+            margin-top: 0px;
+        }
+
+        .verify-module-step-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height:20px;
+            background-color: green;
+            border-radius: 50%;
+            font-size: large;
+            color: white;
+            box-shadow: 0px 0px 5px 3px grey;
+            margin-right: 10px;
+        }
+
+        .verify-module-step-text {
+            font-family: PingfangSC-1,sans-serif;
+            font-weight: bolder;
+        }
+
+        .verify-module-desc {
+            font-size: 12px;
+        }
+        .verify-module-operate-panel {
+            font-size: small;
+        }
+
+        .verify-module-input-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+        } 
+
+        .verify-module-key {
+            display: flex;
+            width: 75px;
+            flex-direction: row-reverse;
+        }
+
+        .verify-module-input {
+            flex: 1;
+            margin-left: 5px;
+            height: 13px;
+            font-size: 12px;
+            padding: 2px;
+            outline: none;
+            border-radius: 2px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .verify-bottom {
+            display: flex;
+            align-items: center;
+        }
+
+        .question-button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(171, 171, 171);
+            box-shadow: 0px 0px 5px 3px grey;
+            color: white;
+        }
+
+        .bottom-right-menu {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin-left: auto;
+        }
+
+        .common-button-bottom {
+            height: 20px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: #877f7c9a;
+            color: white;
+            font-size: 12px;
+            transition: background-color 100ms;
+        }
+
+        .common-button-bottom:hover {
+            background-color: gray;
+        }
+
+        .status-text {
+            margin-left: 10px;
+        }
+
+        .bottom-left-menu {
+            display: flex;
+            align-items: center;
+        }
+        
+        .green-text {
+            color: green;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .verify-module-expire-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height:20px;
+            background-color: red;
+            border-radius: 50%;
+            font-size: medium;
+            color: white;
+            box-shadow: 0px 0px 5px 3px grey;
+            margin-right: 10px;
+        }
+
+        .verify-expire {
+
+            background-color: rgba(255, 128, 0, 0.534);
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 5px 1px grey;
+        }
+    </style>
+</html>
